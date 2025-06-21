@@ -41,7 +41,18 @@
             <div class="hero-text">
                 <h1>Mugume Twinamatsiko Atwine, MSc</h1>
                 <h2 class="role">Data Scientist</h2>
-                <p class="hero-subheading" style="text-align: justify;">I help health-tech and research teams transform complex datasets into impactful AI solutions. Dynamic and results-oriented Data Scientist with over a decade of experience in computer science and specialized expertise in machine learning, deep learning, and natural language processing. Proven track record in leading transformative projects for health equity, pandemic preparedness, and decision support systems across multiple international settings. Demonstrated ability to innovate and drive project success through ethical AI practices, advanced data analytics, and effective team leadership. Skilled in deploying robust models and pipelines using Python, R, and various AI frameworks to solve critical challenges in healthcare and bioinformatics.</p>
+                <div id="intro-text">
+                    <p class="hero-subheading" style="text-align: justify;">Research institutions and healthcare organizations across Africa are sitting on goldmines of critical health data - millions of patient records, genomic sequences, epidemiological surveys, and clinical trial results - yet this treasure trove remains largely untapped. These organizations face a perfect storm: rapidly growing datasets from digital health initiatives, limited local expertise in advanced analytics, inadequate infrastructure for large-scale data processing, and urgent health challenges that require immediate, evidence-based solutions... <span id="dots"></span></p>
+                    <div id="more-text">
+                        <p class="hero-subheading" style="text-align: justify;">Meanwhile, critical decisions about disease prevention, treatment protocols, and resource allocation are still being made with incomplete information, while the answers lie buried in their own data warehouses.</p>
+                        <p class="hero-subheading" style="text-align: justify;">AI solutions designed for African realities - systems that work with limited connectivity, respect diverse cultural health practices, handle multiple local languages, and integrate with existing infrastructure without requiring massive overhauls. These solutions must also navigate complex ethical considerations around data sovereignty, ensuring that communities contributing their data are the primary beneficiaries of AI-driven insights.</p>
+                        <p class="hero-subheading" style="text-align: justify;">I design and deploy machine learning pipelines for real-world challenges. At Uganda Virus Research Institute, I lead data catalog development and FAIR assessment initiatives. Through my work with ACE Bioinformatics, I've built scalable ML solutions for health data analytics while teaching next-generation data scientists. My projects span from clinical decision support systems to pandemic preparedness platforms - always with a focus on responsible AI implementation.</p>
+                        <p class="hero-subheading" style="text-align: justify;">Research teams move from weeks of waiting for analysis to real-time insights. The eLwazi work helps enable seamless data sharing across institutions, while my work in predictive models for HIV risk assessment, Cryptococcal Meningitis detection, and COVID-19 misinformation analysis directly support clinical decision-making and public health strategies. Health chatbots provide instant access to critical information, decision support systems streamline clinical workflows, and FAIR assessment work ensures datasets remain accessible for cross-institutional collaboration - multiplying research impact while training the next generation of African data scientists.</p>
+                    </div>
+                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Read More</button>
+                </div>
+                <p class="hero-subheading" style="text-align: center; font-weight: bold; margin-top: 20px;">Core Technologies: Python | R | Machine Learning | NLP | Data Visualization | Statistical Analysis | Cloud Computing | Ensemble Models</p>
+                <p class="hero-subheading" style="text-align: center; font-style: italic;">MSc Computer Science | Uganda Virus Research Institute | ACE Bioinformatics | Published Researcher | Ethical AI Advocate</p>
                 <a class="cta-button" href="mailto:twinmugume@gmail.com?subject=Free%20Consultation%20Call">Book a Free Call</a>
             </div>
         </section>
@@ -282,5 +293,22 @@
             </div>
         </footer>
     </div>
+<script>
+        function toggleReadMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more-text");
+            var btnText = document.getElementById("read-more-btn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 </html>
