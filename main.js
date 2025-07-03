@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const closePopupButton = document.getElementById('close-popup');
     const scheduleCallButton = document.querySelector('#scroll-popup .btn-primary');
 
+    if (!popupOverlay || !closePopupButton || !scheduleCallButton) {
+        console.error('Popup elements not found. Check your HTML IDs and classes.');
+        return; // Stop execution if elements are missing
+    }
+
     // Function to show the popup
     const showPopup = () => {
         // Only show if it hasn't been shown this session
