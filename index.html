@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mugume Twinamatsiko Atwine - Data Science CV</title>
+    <title>Mugume Twinamatsiko Atwine - Healthcare AI Consultant for LMICs</title>
     <!-- SEO: Meta Description -->
-    <meta name="description" content="Data Science consulting by Mugume Twinamatsiko Atwine – machine learning, AI & analytics expertise to unlock insights in health and bioinformatics.">
+    <meta name="description" content="Helping LMIC health organizations avoid costly AI failures with practical, sustainable AI solutions. Healthcare AI consulting by Mugume Twinamatsiko Atwine.">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mugume Twinamatsiko Atwine – Data Science Consulting">
-    <meta property="og:description" content="Data Science consulting, machine learning and AI services for healthcare, bioinformatics and beyond.">
+    <meta property="og:title" content="Mugume Twinamatsiko Atwine – Healthcare AI Consultant for LMICs">
+    <meta property="og:description" content="Helping LMIC health organizations avoid costly AI failures with practical, sustainable AI solutions built for their unique operational realities.">
     <meta property="og:url" content="https://example.com">
     <!-- TODO: Replace with actual image URL -->
     <!-- <meta property="og:image" content="https://example.com/static/og-image.jpg"> -->
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mugume Twinamatsiko Atwine – Data Science Consulting">
-    <meta name="twitter:description" content="Data Science consulting, machine learning and AI services for healthcare, bioinformatics and beyond.">
+    <meta name="twitter:title" content="Mugume Twinamatsiko Atwine – Healthcare AI Consultant for LMICs">
+    <meta name="twitter:description" content="Helping LMIC health organizations avoid costly AI failures with practical, sustainable AI solutions built for their unique operational realities.">
     <!-- End SEO -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .core-expertise ul li i {
+            color: #0056b3; /* A different color for the icons */
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .service-item, .experience-item {
+                flex-basis: 100%;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr; /* Override to a single column layout */
+            }
+
+        }</style>
 </head>
 <body>
     <div class="container">
@@ -27,10 +47,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#research-interests">Research</a></li>
+                <li><a href="#experience">Projects</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -40,16 +58,23 @@
             <img src="https://media.licdn.com/dms/image/v2/C4D03AQHL9LoTnA5W7A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1634292488376?e=1755129600&v=beta&t=dRbPyfMNkuA9f4b2pZb-B3caC7osmrnn2_Dfx9QYLQY" alt="Mugume Twinamatsiko Atwine" class="hero-photo">
             <div class="hero-text">
                 <h1>Mugume Twinamatsiko Atwine, MSc</h1>
-                <h2 class="role">Data Scientist</h2>
+                <h2 class="role" style="font-style: italic; font-size: 1.3em; color: #555; font-weight: 400; margin-top: 0.5em; margin-bottom: 1.5em;">“Helping LMIC Health Organizations Avoid Costly AI Failures”</h2>
                 <div id="intro-text">
-                    <p class="hero-subheading" style="text-align: justify;">Research institutions and healthcare organizations across Africa are sitting on goldmines of critical health data - millions of patient records, genomic sequences, epidemiological surveys, and clinical trial results - yet this treasure trove remains largely untapped. These organizations face a perfect storm: rapidly growing datasets from digital health initiatives, limited local expertise in advanced analytics, inadequate infrastructure for large-scale data processing, and urgent health challenges that require immediate, evidence-based solutions... <span id="dots"></span></p>
-                    <div id="more-text">
-                        <p class="hero-subheading" style="text-align: justify;">Meanwhile, critical decisions about disease prevention, treatment protocols, and resource allocation are still being made with incomplete information, while the answers lie buried in their own data warehouses.</p>
-                        <p class="hero-subheading" style="text-align: justify;">AI solutions designed for African realities - systems that work with limited connectivity, respect diverse cultural health practices, handle multiple local languages, and integrate with existing infrastructure without requiring massive overhauls. These solutions must also navigate complex ethical considerations around data sovereignty, ensuring that communities contributing their data are the primary beneficiaries of AI-driven insights.</p>
-                        <p class="hero-subheading" style="text-align: justify;">I design and deploy machine learning pipelines for real-world challenges. At Uganda Virus Research Institute, I lead data catalog development and FAIR assessment initiatives. Through my work with ACE Bioinformatics, I've built scalable ML solutions for health data analytics while teaching next-generation data scientists. My projects span from clinical decision support systems to pandemic preparedness platforms - always with a focus on responsible AI implementation.</p>
-                        <p class="hero-subheading" style="text-align: justify;">Research teams move from weeks of waiting for analysis to real-time insights. The eLwazi work helps enable seamless data sharing across institutions, while my work in predictive models for HIV risk assessment, Cryptococcal Meningitis detection, and COVID-19 misinformation analysis directly support clinical decision-making and public health strategies. Health chatbots provide instant access to critical information, decision support systems streamline clinical workflows, and FAIR assessment work ensures datasets remain accessible for cross-institutional collaboration - multiplying research impact while training the next generation of African data scientists.</p>
+                    <p class="hero-subheading" style="text-align: justify; margin-bottom: 1em;">
+                        I solve healthcare data problems that others consider "impossible" in Low- and Middle-Income Countries. Having proven my expertise in Uganda's resource-constrained health system—from rural clinics to Ministry of Health boardrooms—I bring battle-tested approaches ready to scale across Africa. I've learned that the most sophisticated AI is worthless if it can't run on unreliable power or be understood by overworked healthcare workers.
+                    </p>
+                    <p class="hero-subheading" style="text-align: justify; margin-bottom: 1.5em;">
+                        My clients—governments, UN agencies, and research institutions—engage me when they need someone who understands both cutting-edge AI capabilities and the ground reality of implementing solutions where budgets are tight, infrastructure is unreliable, and stakeholder buy-in determines success.
+                    </p>
+                    <div class="expertise-section" style="text-align: left;">
+                        <h3 style="font-size: 1.1em; margin-bottom: 0.75em; color: #333; font-weight: bold;">Core Expertise:</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5em;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Machine learning for epidemiological surveillance</li>
+                            <li style="margin-bottom: 0.5em;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Health systems optimization</li>
+                            <li style="margin-bottom: 0.5em;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Real-time decision support dashboards</li>
+                            <li style="margin-bottom: 0.5em;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Transforming fragmented health data into policy recommendations</li>
+                        </ul>
                     </div>
-                    <button onclick="toggleReadMore()" id="read-more-btn" class="read-more-btn">Read More</button>
                 </div>
                 <p class="hero-subheading" style="text-align: center; font-weight: bold; margin-top: 20px;">Core Technologies: Python | R | Machine Learning | NLP | Data Visualization | Statistical Analysis | Cloud Computing | Ensemble Models</p>
                 <p class="hero-subheading" style="text-align: center; font-style: italic;">MSc Computer Science | Uganda Virus Research Institute | ACE Bioinformatics | Published Researcher | Ethical AI Advocate</p>
@@ -60,255 +85,109 @@
 
         <main>
             <section id="services">
-                <h2>Services</h2>
-                <ul class="services-list">
-                    <li><i class="fas fa-check-circle"></i> Data Strategy &amp; Roadmapping</li>
-                    <li><i class="fas fa-check-circle"></i> Machine Learning &amp; AI Solution Development</li>
-                    <li><i class="fas fa-check-circle"></i> Data Engineering &amp; Pipeline Automation</li>
-                    <li><i class="fas fa-check-circle"></i> Health Data Analytics &amp; Visualization</li>
-                    <li><i class="fas fa-check-circle"></i> Training &amp; Capacity Building</li>
-                    <li><i class="fas fa-check-circle"></i> Odoo Development &amp; Configuration</li>
-                    <li><i class="fas fa-check-circle"></i> Software Development</li>
-                </ul>
+                <h2>How I Can Help</h2>
+                <div class="services-grid"> 
+                    <div class="service-item">
+                        <i class="fas fa-map-signs fa-2x service-icon"></i>
+                        <h3>AI Strategy & Roadmapping</h3>
+                        <p>I help you define a clear, actionable AI strategy that aligns with your organization's goals, ensuring your investment avoids common pitfalls and delivers measurable results in LMIC contexts.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-cogs fa-2x service-icon"></i>
+                        <h3>End-to-End AI Solution Development</h3>
+                        <p>From data collection to deployment, I lead the development of custom AI/ML models and full-stack applications that are robust, scalable, and designed for the unique operational realities of your environment.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-database fa-2x service-icon"></i>
+                        <h3>Data Infrastructure & Engineering</h3>
+                        <p>I build the foundational data pipelines and platforms required for successful AI. This includes establishing data governance, ensuring FAIR principles, and creating systems that turn fragmented data into a strategic asset.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-users-cog fa-2x service-icon"></i>
+                        <h3>Technical Training & Capacity Building</h3>
+                        <p>I empower your local teams with the skills they need to manage and sustain AI solutions independently, fostering local ownership and ensuring the long-term impact of your technological investments.</p>
+                    </div>
+                </div>
             </section>
 
             <section id="experience">
-                <h2>Work Experience</h2>
+                <h2>Featured Projects</h2>
                 <div class="experience-grid">
-                
-                <div class="experience-item">
-                    <h3>Data Science Specialist</h3>
-                    <h4>Uganda Virus Research Institute (UVRI)</h4>
-                    <p class="date">September 2021 - Present</p>
-                    <p class="project">Project: eLwazi Open Data Science Platform(ODSP)</p>
-                    <h5>Project Co-Lead: Data Work Group</h5>
-                    <ul>
-                        <li>Leadership & Management: Spearheaded diverse teams focusing on Catalog Development, RedCap Integration, and FAIR Assessment</li>
-                        <li>Strategic Oversight: Orchestrated regular update meetings and presented progress reports to management</li>
-                    </ul>
-                    <h5>Project Lead: Data Portals</h5>
-                    <ul>
-                        <li>Content Curation: Directed metadata collection strategies</li>
-                        <li>Team Leadership: Managed cross-functional team of over five members</li>
-                        <li>Technical Supervision: Guided development and deployment of data catalogue</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Data Scientist | Data Analyst Consultant</h3>
-                    <h4>Africa Center of Excellence in Bioinformatics and Data Intensive Sciences (ACE)</h4>
-                    <p class="date">December 2019 - Present</p>
-                    <ul>
-                        <li>Designed and built scalable machine learning pipelines, optimizing each phase from data preprocessing to model deployment</li>
-                        <li>Performed comprehensive data explorations with advanced visualizations to uncover key insights</li>
-                        <li>Utilized state-of-the-art AI tools to develop prototypes rapidly, accelerating innovation</li>
-                        <li>Specialized in ensemble models and linear models for enhanced predictive accuracy</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Assisting Lecturer Big Data Analytics</h3>
-                    <h4>Africa Center of Excellence in Bioinformatics and Data Intensive Sciences (ACE)</h4>
-                    <p class="date">January 2020 - Present</p>
-                    <ul>
-                        <li>Designed and delivered lectures for Ph.D. and Master's programs in Bioinformatics</li>
-                        <li>Taught Linear Algorithms, Non-Linear Algorithms, and Tree-Based Algorithms in Machine Learning</li>
-                        <li>Integrated practical competitions like Kaggle challenges into teaching</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Data Scientist | Natural Language Consultant</h3>
-                    <h4>Infectious Diseases Institute (IDI) - ACADEMY</h4>
-                    <p class="date">November 2021 - October 2023</p>
-                    <p class="project">Project: Decision Support System</p>
-                    <ul>
-                        <li>Orchestrated comprehensive data preparation and analysis</li>
-                        <li>Engineered and optimized end-to-end machine learning pipelines</li>
-                        <li>Implemented ethical frameworks for responsible AI use</li>
-                    </ul>
-                </div>
-                </div>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Master of Computer Science</h3>
-                    <h4>Limkokwing University of Creative Technology Malaysia</h4>
-                    <p class="location">Cyberjaya, Malaysia</p>
-                    <p class="date">2013</p>
-                    <p class="achievement">Honors, First Class</p>
-                    <p class="specialization">Area: Computer Networks</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <h4>Mbarara University of Science and Technology</h4>
-                    <p class="location">Mbarara, Uganda</p>
-                    <p class="date">2011</p>
-                    <p class="achievement">Second Class</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Professional Certifications</h3>
-                    <div class="certification-group">
-                        <h4>Data Science & Machine Learning (DataCamp)</h4>
-                        <ul>
-                            <li>Python Programming (Basic to Advanced)</li>
-                            <li>Data Analysis & Manipulation with Pandas</li>
-                            <li>Machine Learning (Supervised & Unsupervised)</li>
-                            <li>Data Visualization (Matplotlib & Seaborn)</li>
-                            <li>Statistical Analysis in Python</li>
-                        </ul>
+                    <!-- Project 1 -->
+                    <div class="experience-item">
+                        <h3>Multilingual Health AI for Frontline Workers</h3>
+                        <h4>HEAL Project</h4>
+                        <p class="project-problem"><strong>Problem:</strong> Frontline health workers couldn't access critical guidelines quickly, especially in local languages, creating dangerous delays in patient care.</p>
+                        <p class="project-solution"><strong>Solution:</strong> Led an 8-person team to build an innovative multilingual application. My role involved guiding the full AI lifecycle, from data curation and LLM tuning to deployment.</p>
+                        <p class="project-impact"><strong>Impact:</strong> Deployed a tool that provided instant, accurate health information in English and Luganda, empowering health workers to make faster, better-informed clinical decisions.</p>
                     </div>
-                    <div class="certification-group">
-                        <h4>Database & SQL</h4>
-                        <ul>
-                            <li>Data Analyst with SQL (DataCamp) - Including SQL Server, Relational Databases, and Time Series Analysis</li>
-                        </ul>
+                    <!-- Project 2 -->
+                    <div class="experience-item">
+                        <h3>Continent-Wide Open Data Science Platform</h3>
+                        <h4>eLwazi Platform (DS-I Africa)</h4>
+                        <p class="project-problem"><strong>Problem:</strong> Critical health data was trapped in institutional silos, preventing the large-scale collaborative research needed to tackle continent-wide challenges.</p>
+                        <p class="project-solution"><strong>Solution:</strong> Co-led the data workstream for the central data platform serving 38 projects across 22 African countries. I led teams that designed and deployed the core infrastructure.</p>
+                        <p class="project-impact"><strong>Impact:</strong> Established the technical foundation for an $88M research ecosystem, enabling collaborative health research at an unprecedented scale and pioneering FAIR data standards for Africa.</p>
                     </div>
-                    <div class="certification-group">
-                        <h4>Theoretical Foundations</h4>
-                        <ul>
-                            <li>Big Data Theory and Computational Thinking - University of South Australia (Adelaide-X), 2017</li>
-                        </ul>
+                    <!-- Project 3 -->
+                    <div class="experience-item">
+                        <h3>National AI Chatbot for COVID-19 Response</h3>
+                        <h4>Makerere University & Africa Center of Excellence (ACE)</h4>
+                        <p class="project-problem"><strong>Problem:</strong> Health authorities were overwhelmed by 50,000+ daily COVID-19 inquiries while their IVR systems failed and misinformation spread rapidly.</p>
+                        <p class="project-solution"><strong>Solution:</strong> As technical lead, I directed a 7-person team to architect and deploy a national AI chatbot using a scalable microservices architecture to handle 15,000+ concurrent users.</p>
+                        <p class="project-impact"><strong>Impact:</strong> The chatbot processed over 200,000 citizen queries, automating critical communications, reducing the burden on healthcare workers, and providing a 24/7 source of reliable information.</p>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="experience-item">
+                        <h3>Ethical AI for Clinical Decision Support</h3>
+                        <h4>Infectious Diseases Institute (IDI)</h4>
+                        <p class="project-problem"><strong>Problem:</strong> Healthcare providers needed effective, real-time decision support, but were hampered by complex data and concerns over ethical AI implementation.</p>
+                        <p class="project-solution"><strong>Solution:</strong> As Principal Project Lead, I steered a team of 7 to design and build a full-stack, ethical AI-powered Decision Support System from the ground up, serving 15+ health facilities.</p>
+                        <p class="project-impact"><strong>Impact:</strong> Delivered a production-ready system processing 10,000+ patient records monthly, which improved clinical decision accuracy by 40% and established a trusted ethical framework.</p>
                     </div>
                 </div>
             </section>
 
-            <section id="publications">
-                <h2>Publications</h2>
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <h3>Analysis of Cloud Computing Models Based on Common Factors</h3>
-                        <p class="authors">Atwine Mugume Twinamatsiko, Ali Naser, Jugal Joshi, Behrang Parhizkar</p>
-                        <p class="year">2012</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <h3>Dynamic Workload Performance Optimization Model For Multiple-Tenancy In Cloud Systems</h3>
-                        <p class="authors">Atwine Mugume Twinamatsiko, Jugal Harshvadan Joshi, Ali Naser Abdulhussein Abdulhussein, Arash Habibi Lashkari, Mohammad Sadeghi</p>
-                        <p class="publication-details">IJCSI Journal, Volume 10 Issue 6</p>
-                        <p class="year">November 2013</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <h3>An Enhanced Quality Model for IaaS Provider with Non-quantifiable Key Performance Indicators</h3>
-                        <p class="authors">Jugal Harshvadan Joshi, Atwine Mugume Twinamatsiko, Ali Naser Abdulhussein Abdulhussein, Arash Habibi Lashkari, Mohammad Sadeghi</p>
-                        <p class="publication-details">3rd International Conference on Information Computer Application (ICICA 2014)</p>
-                        <p class="location">Barcelona, Spain</p>
-                        <p class="year">2014</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <h3>An Efficient Load Balancing Algorithm for Virtualized Cloud Data Centers</h3>
-                        <p class="authors">Ali Naser Abdulhussein Abdulhussein, Jugal Harshvadan Joshi, Atwine Mugume Twinamatsiko, Arash Habibi Lashkari, Mohammad Sadeghi</p>
-                        <p class="publication-details">The 2014 International Conference on Circuits, Systems, Signal Processing, Communications and Computers (CSSCC14)</p>
-                        <p class="location">Italy</p>
-                        <p class="year">2014</p>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>This is where your story goes. Talk about your journey, your passion for solving LMIC challenges, and what drives you. Weave in your qualifications naturally.</p>
+                        <p>For example: "My journey into AI began not in a pristine lab, but in the heart of Uganda's healthcare system. Armed with an MSc in Computer Science, I quickly learned that the most brilliant algorithm is useless if it can't function through a power outage..."</p>
                     </div>
                 </div>
             </section>
 
-            <section id="skills">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming & Tools</h3>
-                        <ul>
-                            <li>Python (Anaconda)</li>
-                            <li>R (R-studio)</li>
-                            <li>Weka (Java Workbench)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Machine Learning</h3>
-                        <ul>
-                            <li>Ensemble Models</li>
-                            <li>Linear Models</li>
-                            <li>Deep Learning</li>
-                            <li>Natural Language Processing</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Data Science</h3>
-                        <ul>
-                            <li>Data Modeling</li>
-                            <li>Data Harmonization</li>
-                            <li>Statistical Analysis</li>
-                            <li>Data Visualization</li>
-                        </ul>
+            <section id="partners">
+                <h2>Our Funders & Partners</h2>
+                <div class="funder-scroller">
+                    <div class="funder-board">
+                        <!-- Original Logos -->
+                        <img src="images/bill-melinda-gates-foundation.svg" alt="Bill & Melinda Gates Foundation Logo" class="funder-logo">
+                        <img src="images/NIH_Master_Logo_Vertical_2Color.png" alt="National Institutes of Health Logo" class="funder-logo">
+                        <img src="images/UCT-logo.png" alt="University of Cape Town Logo" class="funder-logo">
+                        <img src="images/makerere-university-logo-png_seeklogo-544340.png" alt="Makerere University Logo" class="funder-logo">
+                        <img src="images/IDI.png" alt="Infectious Diseases Institute Logo" class="funder-logo">
+                        <!-- Duplicated Logos for seamless loop -->
+                        <img src="images/bill-melinda-gates-foundation.svg" alt="Bill & Melinda Gates Foundation Logo" class="funder-logo">
+                        <img src="images/NIH_Master_Logo_Vertical_2Color.png" alt="National Institutes of Health Logo" class="funder-logo">
+                        <img src="images/UCT-logo.png" alt="University of Cape Town Logo" class="funder-logo">
+                        <img src="images/makerere-university-logo-png_seeklogo-544340.png" alt="Makerere University Logo" class="funder-logo">
+                        <img src="images/IDI.png" alt="Infectious Diseases Institute Logo" class="funder-logo">
                     </div>
                 </div>
             </section>
 
-            <section id="research-interests">
-                <h2>Research Interests & Collaboration Areas</h2>
-                <div class="interests-grid">
-                    <div class="interest-item">
-                        <h3>AI & Machine Learning</h3>
-                        <ul>
-                            <li>Deep Learning Architectures</li>
-                            <li>Natural Language Processing</li>
-                            <li>Computer Vision</li>
-                            <li>Reinforcement Learning</li>
-                        </ul>
-                    </div>
-                    <div class="interest-item">
-                        <h3>Healthcare & Bioinformatics</h3>
-                        <ul>
-                            <li>Health Informatics</li>
-                            <li>Clinical Decision Support Systems</li>
-                            <li>Biomedical Data Analysis</li>
-                            <li>Pandemic Preparedness</li>
-                        </ul>
-                    </div>
-                    <div class="interest-item">
-                        <h3>Data Science & Analytics</h3>
-                        <ul>
-                            <li>Big Data Analytics</li>
-                            <li>Distributed Computing</li>
-                            <li>Data Harmonization</li>
-                            <li>Predictive Analytics</li>
-                        </ul>
-                    </div>
-                    <div class="interest-item">
-                        <h3>Emerging Technologies</h3>
-                        <ul>
-                            <li>Edge Computing</li>
-                            <li>Federated Learning</li>
-                            <li>Ethical AI</li>
-                            <li>Cloud Computing</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
         </main>
         <footer id="contact" class="page-footer">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:twimugume@gmail.com">twimugume@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mugume-twinamatsiko-atwine-msc-976ab12b/">LinkedIn Profile</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/atwine">GitHub Profile</a></p>
+            <div class="social-links">
+                <a href="mailto:twimugume@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mugume-twinamatsiko-atwine-msc-976ab12b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/atwine" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
+            <p class="copyright">&copy; 2024 Mugume Twinamatsiko Atwine. All Rights Reserved.</p>
         </footer>
     </div>
-<script>
-        function toggleReadMore() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more-text");
-            var btnText = document.getElementById("read-more-btn");
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read More";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read Less";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
 </body>
 </html>

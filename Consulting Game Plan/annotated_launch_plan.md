@@ -67,23 +67,67 @@
 - Identify where you're talking about technology instead of talking about their problems
 
 **Action Items:**
-- [ ] **CV (`Data Science CV Aug 2024.txt`):**
-    - [ ] Add a 2-3 sentence Professional Summary using the "Narrative Version" of your differentiator.
-    - [ ] Reframe all experience bullet points to focus on achievements and problems solved, not just responsibilities.
-    - [ ] Create a "Key Projects" section to highlight the impact of your major work (e.g., COVID-19 Decision Support System).
-- [ ] **LinkedIn Profile:**
-    - [ ] Update your headline to a client-facing one-liner (e.g., "Helping LMIC Health Organizations Avoid Costly AI Failures...").
-    - [ ] Replace the "About" section with your full differentiator narrative.
-    - [ ] Use the "Featured" section to link to key projects and publications.
+- [x] **CV (`Data Science CV Aug 2024.txt`):**
+    - [x] Add a 2-3 sentence Professional Summary using the "Narrative Version" of your differentiator.
+    - [x] Reframe all experience bullet points to focus on achievements and problems solved, not just responsibilities.
+    - [x] Create a "Key Projects" section to highlight the impact of your major work (e.g., COVID-19 Decision Support System).
+- [x] **LinkedIn Profile:**
+    - [x] Update your headline to a client-facing one-liner (e.g., "Helping LMIC Health Organizations Avoid Costly AI Failures...").
+    - [x] Replace the "About" section with your full differentiator narrative.
+    - [x] Use the "Featured" section to link to key projects and publications.
+    
 - [ ] **GitHub Profile:**
     - [ ] Create a profile-level `README.md` that introduces you and highlights key project repositories.
     - [ ] Rewrite the `README.md` for your most important projects to tell a story: Problem, Constraints, Solution, Impact.
 - [ ] **Website (In Development):**
     - [ ] Ensure the homepage immediately communicates your unique value proposition to an LMIC health director.
     - [ ] Structure the site around problems you solve, not just a list of technical services.
-- [ ] **Facebook Professional Page:**
-    - [ ] Create a new, professional Facebook Page separate from your personal profile.
-    - [ ] Use it as a distribution channel for blog posts and case studies to a wider audience.
+
+---
+
+### ✅ Task 3.5: Establish Professional Facebook Presence
+**🧠 STRATEGIC THINKING:** Facebook is not just for friends; it's a powerful tool for reaching decision-makers in NGOs, government, and health institutions, especially in regions where it's a primary communication channel. Your goal is to use it as a "trust accelerator" by sharing high-value content that demonstrates your expertise and unique understanding of the LMIC context. This is about professional networking and content distribution, not personal updates.
+
+**💭 Key Questions to Ask Yourself:**
+- Where do my target clients (e.g., program managers at NGOs, Ministry of Health officials) spend their time online? Is Facebook a key channel?
+- What kind of content would make them stop scrolling and think, "This person understands my challenges"?
+- How can I use Facebook to drive traffic to my primary assets (website, case studies, LinkedIn)?
+- What is the right tone? (Professional but approachable, expert but not academic).
+
+**🎯 Implementation Approach: Phase 1 - Page Setup & Foundation (This Week)**
+- [ ] **Create Your Professional Page:**
+    - [ ] Go to [facebook.com/pages/create](https://www.facebook.com/pages/create).
+    - [ ] **Page Name:** Use your full name with a clear descriptor (e.g., "Ronald Galiwango - Healthcare AI Consultant"). This is professional and searchable.
+    - [ ] **Category:** Choose "Consultant" or "Science, Technology & Engineering".
+    - [ ] **Bio/Description:** Use a concise version of your value proposition. "I help LMIC health organizations avoid costly AI failures by delivering practical, sustainable solutions built for their unique operational realities."
+- [ ] **Brand Your Page:**
+    - [ ] **Profile Picture:** Use the same professional headshot from your LinkedIn profile for brand consistency.
+    - [ ] **Cover Photo:** Create a simple, professional cover image using a tool like Canva. It could include your name, title, and a high-quality stock image related to data or healthcare in Africa. Avoid clutter.
+- [ ] **Configure Page Settings:**
+    - [ ] **Custom URL/Username:** Set a custom URL (e.g., `facebook.com/RonaldGaliwangoAI`). This makes it easy to share.
+    - [ ] **Call-to-Action Button:** Set the main button to "Learn More" and link it to your LinkedIn profile for now (and later, your website).
+    - [ ] **Populate 'About' Section:** Fill in all relevant details, linking back to your LinkedIn and future website.
+
+---
+
+**🎯 Implementation Approach: Phase 2 - Initial Content & Growth (Next 2 Weeks)**
+- [ ] **Seed Initial Content (3-5 Posts):** Before you invite anyone, populate the page so it looks active and valuable.
+    - [ ] **Post 1 (Introduction):** A short post introducing the page's purpose. "Welcome to my professional page. I'll be sharing insights and case studies on implementing effective AI in LMIC healthcare systems..." Link to your LinkedIn "About" section.
+    - [ ] **Post 2 (Share a Case Study):** Repurpose your "COVID-19 Decision Support" case study into a Facebook post. Use a compelling image and focus on the Problem/Solution/Impact.
+    - [ ] **Post 3 (Share an Insight):** Write a short post (2-3 paragraphs) on a key challenge, like "Why most AI projects fail in low-bandwidth environments." This shows you're a thought leader.
+- [ ] **Initial Audience Growth:**
+    - [ ] **Invite Strategically:** Go through your personal Facebook friends and invite only relevant professional contacts, colleagues, and peers in the health-tech space. Do *not* invite all your friends and family, as this will dilute your audience.
+    - [ ] **Cross-Promote:** Add your new Facebook Page link to your email signature and your LinkedIn profile's contact section.
+
+**🎯 Implementation Approach: Phase 3 - Ongoing Engagement (Monthly Rhythm)**
+- [ ] **Develop a Simple Content Calendar:**
+    - [ ] **Week 1:** Share a repurposed case study from your portfolio.
+    - [ ] **Week 2:** Post a short "insight" or "lesson learned" from your experience.
+    - [ ] **Week 3:** Share a link to an interesting article or report relevant to LMIC health AI, with your own commentary.
+    - [ ] **Week 4:** Ask a question to engage your audience (e.g., "What's the biggest data challenge you're facing this year?").
+- [ ] **Engage with Relevant Groups:**
+    - [ ] Identify 3-5 professional Facebook Groups related to "Global Health," "Digital Health Africa," or "AI for Development."
+    - [ ] Don't just post links. Participate authentically by answering questions and adding value to discussions. This builds your reputation as an expert.
     - [ ] Focus primary professional engagement on LinkedIn, using Facebook more for broad content sharing.
 - [ ] **Overall:**
     - [ ] Create a list of content gaps (e.g., missing case studies, testimonials, project impact metrics).
