@@ -383,6 +383,68 @@ html {
     }
 }
 
+/* About Section Buttons */
+.about-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* For responsiveness */
+    justify-content: center;
+}
+
+.highlight-accent {
+    color: var(--accent-color);
+    font-weight: 600; /* Bolder, but not full bold */
+}
+
+.cta-paragraph {
+    background-color: #fdfaf6; /* A very light orange/cream */
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.05em; /* Slightly larger for emphasis */
+    line-height: 1.7;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Darker shade of secondary */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
 /* Footer */
 .page-footer {
     background-color: var(--background-color);
@@ -391,6 +453,11 @@ html {
     padding: 2rem 1rem;
     margin-top: 3rem;
     border-top: 1px solid #dee2e6; /* Subtle border for separation */
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .social-links {
