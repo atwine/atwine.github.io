@@ -40,6 +40,8 @@
 ### ✅ Task 3: Define Your Service Offerings
 **Create detailed descriptions for:**
 
+---
+
 **Package 1: Healthcare AI Feasibility Assessment ($3,500)**
 - [ ] 2-week timeline
 - [ ] Deliverable: Infrastructure readiness report
@@ -67,6 +69,8 @@
 - What's your "failure rate" story - how many Western AI solutions fail in LMIC settings vs. yours?
 - Can you create a "sustainability scorecard" based on what you learned from managing 5+ member teams at UVRI?
 
+---
+
 ### ✅ Task 4: Create Service Descriptions
 **For each package, write:**
 - [ ] Problem statement (what LMIC challenge it solves)
@@ -74,6 +78,8 @@
 - [ ] Deliverables (specific outputs)
 - [ ] Timeline and pricing
 - [ ] Why you're uniquely qualified to deliver it
+
+---
 
 ## Day 5-7: Case Study Development
 ### ✅ Task 5: Document Your Proven Implementations
@@ -142,6 +148,8 @@
 - [ ] AI Sustainability Framework section
 - [ ] Each with clear problem/solution/outcome structure
 
+---
+
 ## Day 10-11: Content Pages Creation
 ### ✅ Task 9: About Page Rewrite
 **New About Page Content:**
@@ -156,6 +164,8 @@
 - [ ] Add visual elements (photos from Uganda if available)
 - [ ] Include client testimonials (request from UVRI/IDI contacts)
 - [ ] Link to published papers as credibility builders
+
+---
 
 ## Day 12-14: Blog & Content Strategy
 ### ✅ Task 11: Blog Setup and First Posts
