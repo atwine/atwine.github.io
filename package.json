@@ -1,0 +1,31 @@
+{
+  "name": "atwine-healthcare-ai-website",
+  "version": "1.0.0",
+  "description": "Healthcare AI Consultant Website with Jekyll and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "dev": "concurrently \"npm run build-css\" \"bundle exec jekyll serve --livereload\"",
+    "production": "NODE_ENV=production tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --minify"
+  },
+  "keywords": [
+    "jekyll",
+    "tailwindcss",
+    "healthcare",
+    "ai",
+    "lmic",
+    "blog"
+  ],
+  "author": "Atwine",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "concurrently": "^8.2.2"
+  }
+}
