@@ -1,8 +1,9 @@
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #f39c12; /* new accent orange */
-    --background-color: #f5f6fa;
+    /* LinkedIn-inspired: shift away from orange accents to a blue/neutral UI palette */
+    --secondary-color: #0a66c2;
+    --accent-color: #0a66c2;
+    --background-color: #f3f2ef;
     --text-color: #2c3e50;
 }
 
@@ -184,7 +185,9 @@ section {
     background-color: #ffffff;
     padding: 1.75rem; /* slightly tighter for better hierarchy */
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* LinkedIn-inspired feed card: subtle border + lighter shadow (less “marketing” look) */
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     margin-bottom: 2rem;
     animation: fadeInUp 0.6s ease both;
     position: relative; /* for gradient bar */
@@ -196,10 +199,11 @@ section::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    /* LinkedIn-inspired: remove the decorative gradient bar */
+    height: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    background: none;
 }
 
 section h2 {
@@ -338,18 +342,19 @@ section h2::after {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    /* LinkedIn-inspired: pill-shaped primary action */
+    border-radius: 999px;
+    transition: background-color 0.2s ease;
 }
 
 .cta-button:hover {
-    background-color: #2c80c2; /* slightly darker than secondary color */
-    transform: translateY(-2px);
+    /* LinkedIn-inspired: no bounce on hover */
+    background-color: #004182;
 }
 
 .cta-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.4);
+    box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35);
 }
 
 html {
@@ -421,8 +426,9 @@ html {
 }
 
 .service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* LinkedIn-inspired: avoid “lift” animation; use subtle emphasis instead */
+    transform: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
 }
 
 .service-icon {
@@ -487,10 +493,12 @@ html {
 
 .btn {
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    /* LinkedIn-inspired: pill-shaped buttons */
+    border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* LinkedIn-inspired: avoid motion-based hover effects */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     display: inline-block;
     text-align: center;
 }
@@ -502,8 +510,10 @@ html {
 }
 
 .btn-primary:hover {
-    background-color: #2980b9; /* Darker shade of secondary */
-    transform: translateY(-2px);
+    /* LinkedIn-inspired: darker blue hover state */
+    background-color: #004182;
+    /* LinkedIn-inspired: no bounce on hover */
+    transform: none;
 }
 
 .btn-secondary {
@@ -515,7 +525,8 @@ html {
 .btn-secondary:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
-    transform: translateY(-2px);
+    /* LinkedIn-inspired: no bounce on hover */
+    transform: none;
 }
 
 /* Footer */
@@ -559,14 +570,15 @@ html {
     border: 1px solid #e9ecef;
     border-radius: 8px;
     padding: 1.75rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* LinkedIn-inspired: avoid “lift” animation; use subtle emphasis instead */
+    transform: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
 }
 
 .experience-item h3 {

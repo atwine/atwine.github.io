@@ -1,0 +1,6 @@
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Provide sitemap location for better crawl discovery
+Sitemap: https://atwine.github.io/sitemap.xml
