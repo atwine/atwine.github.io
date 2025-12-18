@@ -48,6 +48,48 @@ const { Content } = await render(entry);
         </section>
       </main>
     </div>
+
+    <div id="blogImageModal" class="blog-image-modal" hidden>
+      <div class="blog-image-modal__backdrop" data-close></div>
+      <div class="blog-image-modal__content" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button type="button" class="blog-image-modal__close" data-close>Close</button>
+        <img id="blogImageModalImg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      // Blog-only click-to-zoom for Markdown images. (Avoids loading homepage-only main.js.)
+      const modal = document.getElementById('blogImageModal');
+      const modalImg = document.getElementById('blogImageModalImg');
+
+      function openImageModal(imgEl) {
+        if (!modal || !modalImg) return;
+        modalImg.src = imgEl.currentSrc || imgEl.src;
+        modalImg.alt = imgEl.alt || '';
+        modal.hidden = false;
+        document.body.classList.add('blog-image-modal-open');
+      }
+
+      function closeImageModal() {
+        if (!modal || !modalImg) return;
+        modal.hidden = true;
+        modalImg.src = '';
+        modalImg.alt = '';
+        document.body.classList.remove('blog-image-modal-open');
+      }
+
+      document.querySelectorAll('.blog-content img').forEach((imgEl) => {
+        imgEl.addEventListener('click', () => openImageModal(imgEl));
+      });
+
+      modal?.querySelectorAll('[data-close]')?.forEach((el) => {
+        el.addEventListener('click', closeImageModal);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeImageModal();
+      });
+    </script>
     <!-- main.js is homepage-only (scroll popup); avoid errors on blog pages where those DOM IDs don't exist. -->
   </body>
 </html>
