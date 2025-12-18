@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Provide sitemap location for better crawl discovery
-Sitemap: https://atwine.github.io/sitemap.xml
+Sitemap: https://atwine.github.io/sitemap-index.xml
