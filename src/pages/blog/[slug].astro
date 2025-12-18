@@ -18,6 +18,27 @@ if (!entry) {
   throw new Error(`Could not find blog post: ${id}`);
 }
 
+// SEO: Provide canonical + social metadata using the configured `site` URL.
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const socialImagePath = entry.data.hero_image ?? '/images/atwine_headshot.jpg';
+const socialImageURL = new URL(socialImagePath, Astro.site ?? Astro.url);
+
+// SEO: Minimal structured data to help search engines understand the page is an Article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: entry.data.title,
+  description: entry.data.description,
+  datePublished: entry.data.date.toISOString(),
+  mainEntityOfPage: canonicalURL.toString(),
+  author: {
+    '@type': 'Person',
+    name: 'Mugume Twinamatsiko Atwine',
+    url: 'https://atwine.github.io/',
+  },
+  image: [socialImageURL.toString()],
+};
+
 const { Content } = await render(entry);
 ---
 
@@ -27,6 +48,18 @@ const { Content } = await render(entry);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{entry.data.title} - Mugume Twinamatsiko Atwine</title>
     <meta name="description" content={entry.data.description} />
+    <!-- SEO: Canonical + social previews -->
+    <link rel="canonical" href={canonicalURL} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={entry.data.title} />
+    <meta property="og:description" content={entry.data.description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImageURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={entry.data.title} />
+    <meta name="twitter:description" content={entry.data.description} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/blog.css" />
   </head>
