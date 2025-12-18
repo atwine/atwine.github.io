@@ -9,10 +9,10 @@ tags:
   - "ethics"
   - "talent"
 ---
-![African AI Progress](public\images\blog\Africa_AI.png)
----
 
 ## Introduction: The Real Story Behind AI in Africa
+
+![African AI Progress](public\images\blog\Africa_AI.png)
 
 Artificial Intelligence is dominating global technology conversations, promising to reshape industries and economies. While the world focuses on AI superpowers, Africa—home to only 1% of the world’s AI talent and the source of just 0.12% of granted AI patents—is navigating a far more complex reality. The story of the continent's AI journey is one of the most critical and misunderstood narratives in technology today, marked by incredible potential, grassroots innovation, and significant systemic hurdles.
 
