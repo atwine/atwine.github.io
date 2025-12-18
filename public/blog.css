@@ -1,0 +1,85 @@
+/* Blog-only overrides (scoped by body.blog) to keep the homepage styling unchanged. */
+
+body.blog .container {
+    max-width: 900px;
+}
+
+body.blog section {
+    padding: 2rem;
+}
+
+body.blog h1 {
+    margin-bottom: 0.5rem;
+}
+
+body.blog .blog-meta {
+    color: #666;
+    margin-bottom: 1.25rem;
+}
+
+body.blog .blog-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    /* Keep line length readable on desktop. */
+    max-width: 72ch;
+    margin: 0 auto;
+}
+
+body.blog .blog-content p {
+    margin: 0 0 1rem;
+}
+
+body.blog .blog-content h2 {
+    /* Override homepage section h2 styles for normal article headings. */
+    display: block;
+    padding-bottom: 0;
+    position: static;
+    margin: 2rem 0 0.75rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+body.blog .blog-content h2::after {
+    content: none;
+}
+
+body.blog .blog-content h3 {
+    margin: 1.5rem 0 0.5rem;
+}
+
+body.blog .blog-content ul,
+body.blog .blog-content ol {
+    margin: 0 0 1rem;
+    padding-left: 1.5rem;
+}
+
+body.blog .blog-content li {
+    margin: 0 0 0.35rem;
+}
+
+body.blog .blog-content img {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    object-fit: contain;
+    height: auto;
+    max-height: 380px;
+    margin: 1rem auto 1.5rem;
+    border-radius: 8px;
+}
+
+body.blog .blog-content blockquote {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--secondary-color);
+    background: #f7f9fb;
+}
+
+body.blog .blog-post-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+body.blog .blog-post-list-item {
+    margin-bottom: 1.25rem;
+}

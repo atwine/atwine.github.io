@@ -15,8 +15,9 @@ const posts = (await getCollection('blog')).sort(
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} - Mugume Twinamatsiko Atwine</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/blog.css" />
   </head>
-  <body>
+  <body class="blog">
     <div class="container">
       <nav class="navbar">
         <ul>
@@ -30,9 +31,9 @@ const posts = (await getCollection('blog')).sort(
           {posts.length === 0 ? (
             <p>No posts yet.</p>
           ) : (
-            <ul>
+            <ul class="blog-post-list">
               {posts.map((post) => (
-                <li>
+                <li class="blog-post-list-item">
                   <a href={`/blog/${post.id}/`}>{post.data.title}</a>
                   <div>{post.data.date.toISOString().slice(0, 10)}</div>
                   <div>{post.data.description}</div>
