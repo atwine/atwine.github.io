@@ -22,13 +22,12 @@ body.blog .blog-content {
     line-height: 1.8;
     /* Keep the body text aligned to the same left/right edges as the main heading. */
     width: 100%;
-    /* Justified body text for a report/article feel. */
-    text-align: justify;
-    hyphens: auto;
 }
 
 body.blog .blog-content p {
     margin: 0 0 1rem;
+    text-align: justify;
+    hyphens: auto;
 }
 
 body.blog .blog-content h2 {
@@ -57,6 +56,8 @@ body.blog .blog-content ol {
 
 body.blog .blog-content li {
     margin: 0 0 0.35rem;
+    text-align: justify;
+    hyphens: auto;
 }
 
 body.blog .blog-content img {
@@ -135,6 +136,7 @@ body.blog .blog-content blockquote {
     padding: 0.75rem 1rem;
     border-left: 4px solid var(--secondary-color);
     background: #f7f9fb;
+    text-align: left;
 }
 
 body.blog .blog-post-list {
