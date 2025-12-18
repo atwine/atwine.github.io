@@ -4,7 +4,8 @@ import { getCollection, getEntry, render } from 'astro:content';
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
-  return posts.map((post) => ({
+  // Exclude the initial example post from the built site.
+  return posts.filter((post) => post.id !== 'hello-world').map((post) => ({
     params: { slug: post.id },
     props: { id: post.id },
   }));
@@ -34,7 +35,7 @@ const { Content } = await render(entry);
       <nav class="navbar">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/blog/">Articles</a></li>
         </ul>
       </nav>
 
