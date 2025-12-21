@@ -90,3 +90,10 @@ What "unknown" are you currently avoiding? Reframe it as an opportunity. Formula
 Moving from a technical role into the world of business is not about leaving your engineering identity behind. It is about leveraging its powerful, analytical toolkit to solve a wider and more diverse set of problems. The same mind that can optimize a manufacturing process can optimize a sales funnel. The same skills used to design a resilient system can be used to build a resilient organization.
 
 The goal, as entrepreneur Stwart Peña Feliz puts it, is to become a "lethal asset"—a professional who can not only understand the deep technical details but can also communicate a technology’s business viability and bring it successfully to market. By re-framing your engineering mindset, you won't just bridge the gap between the blueprint and the boardroom—you will design the bridge, oversee its construction, and become the leader who guides your organization across it. This is your path to immense and achievable impact.
+
+<iframe
+  src="/slides/The_Engineer_s_Odyssey_Blueprints_for_a_Modern_Career.pdf"
+  width="100%"
+  height="900"
+  style="border: 1px solid #ddd;"
+></iframe>
