@@ -12,8 +12,17 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
             await navigator.clipboard.writeText(button.dataset.copy);
             button.textContent = 'Copied';
         } catch {
-            button.textContent = 'Select and copy';
+            // Clipboard access can be blocked; select the address so it can be copied by hand.
+            const link = button.parentElement.querySelector('a');
+            if (link) {
+                const range = document.createRange();
+                range.selectNodeContents(link);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            button.textContent = 'Selected, press Ctrl+C';
         }
-        setTimeout(() => { button.textContent = original; }, 2000);
+        setTimeout(() => { button.textContent = original; }, 2500);
     });
 });

@@ -8,6 +8,8 @@
     --graphite: #4A4F59;
     --rule:     #E4E6EA;
     --cobalt:   #1F4FD1;
+    --cobalt-dark: #1A43B3;
+    --body-ink: #2B2F36;
     --wash:     #EEF2FC;
 
     --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
@@ -32,7 +34,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; padding: 0; }
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; padding: 0; }
 ul, ol { list-style: none; }
 img { display: block; max-width: 100%; }
 
@@ -194,7 +196,7 @@ a:hover { text-decoration-color: currentColor; }
 
 .intro {
     margin-top: 28px;
-    color: #2B2F36;
+    color: var(--body-ink);
 }
 .intro p + p { margin-top: 16px; }
 
@@ -278,7 +280,7 @@ a:hover { text-decoration-color: currentColor; }
     font-weight: 500;
     color: var(--graphite);
     text-decoration: none;
-    opacity: 0;
+    opacity: 0.35;
 }
 .project:hover .project-anchor,
 .project-anchor:focus-visible { opacity: 1; }
@@ -299,7 +301,7 @@ a:hover { text-decoration-color: currentColor; }
     margin-top: 14px;
     font-size: 17px;
     line-height: 1.6;
-    color: #2B2F36;
+    color: var(--body-ink);
 }
 
 .links {
@@ -357,16 +359,10 @@ a:hover { text-decoration-color: currentColor; }
     vertical-align: 1px;
 }
 
-.placeholder {
-    background: #FFF4C2;
-    color: var(--ink);
-    padding: 0 4px;
-    border-radius: 2px;
-}
 
 /* Partners */
 
-.partners-intro { margin-top: 16px; font-size: 17px; color: #2B2F36; }
+.partners-intro { margin-top: 16px; font-size: 17px; color: var(--body-ink); }
 
 .partner-logos {
     margin-top: 24px;
@@ -380,7 +376,7 @@ a:hover { text-decoration-color: currentColor; }
     width: auto;
     object-fit: contain;
 }
-.partner-logos img.wide { height: 30px; }
+.partner-logos img.wordmark { height: 30px; }
 
 /* Footer */
 
@@ -454,7 +450,7 @@ a:hover { text-decoration-color: currentColor; }
     text-decoration: none;
     white-space: nowrap;
 }
-.button:hover { background: #1A43B3; }
+.button:hover { background: var(--cobalt-dark); }
 
 .cv-section { margin-top: 40px; }
 
@@ -467,7 +463,7 @@ a:hover { text-decoration-color: currentColor; }
     border-bottom: 1px solid var(--rule);
 }
 
-.cv-summary { margin-top: 14px; font-size: 18px; line-height: 1.6; color: #2B2F36; }
+.cv-summary { margin-top: 14px; font-size: 18px; line-height: 1.6; color: var(--body-ink); }
 
 .cv-entry {
     display: grid;
@@ -601,7 +597,7 @@ a:hover { text-decoration-color: currentColor; }
     .cv-name { font-size: 32px; }
     .cv-entry { grid-template-columns: minmax(0, 1fr); gap: 2px; }
     .partner-logos img { height: 40px; }
-    .partner-logos img.wide { height: 28px; }
+    .partner-logos img.wordmark { height: 28px; }
 }
 
 /* ---------- Print (CV PDF) ---------- */
@@ -632,5 +628,4 @@ a:hover { text-decoration-color: currentColor; }
     .cv-list { font-size: 10pt; gap: 3pt; margin-top: 5pt; }
     .cv-list strong { font-size: 9.5pt; }
     .cv-footnote { font-size: 9pt; }
-    .placeholder { background: none; }
 }
