@@ -1,4 +1,5 @@
-# Checks that run on every `git commit`, on this computer and in CI.
+# Checks that run on every `git commit` on this computer. CI runs gitleaks
+# separately, in .github/workflows/security-scans.yml.
 # Installed by the security-scans skill. Update pinned versions with:
 #   pre-commit autoupdate
 repos:
