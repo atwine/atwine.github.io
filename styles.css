@@ -412,8 +412,6 @@ a:hover { text-decoration-color: currentColor; }
 
 /* Partners */
 
-.bio-text { margin-top: 16px; font-size: 18px; line-height: 1.6; color: var(--body-ink); }
-
 .partners-intro { margin-top: 16px; font-size: 17px; color: var(--body-ink); }
 
 .partner-logos {
@@ -515,7 +513,8 @@ a:hover { text-decoration-color: currentColor; }
     border-bottom: 1px solid var(--rule);
 }
 
-.cv-summary { margin-top: 14px; font-size: 18px; line-height: 1.6; color: var(--body-ink); }
+/* Summary paragraphs: the CV summary and the homepage short bio */
+.cv-summary, .bio-text { margin-top: 14px; font-size: 18px; line-height: 1.6; color: var(--body-ink); }
 
 .cv-entry {
     display: grid;

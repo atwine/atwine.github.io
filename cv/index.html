@@ -7,6 +7,7 @@
     <meta name="description" content="Curriculum vitae of Mugume Twinamatsiko Atwine, Health Data Scientist and ML Engineer in Kampala, Uganda: experience, education, publications, software and data.">
     <!-- The canonical link only names the page address and loads nothing, so subresource integrity does not apply. -->
     <link rel="canonical" href="https://atwine.github.io/cv/"> <!-- nosemgrep: html.security.audit.missing-integrity.missing-integrity -->
+    <link rel="icon" href="../favicon.ico" sizes="32x32">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
     <link rel="preload" href="../fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -21,20 +22,34 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "@id": "https://atwine.github.io/cv/#profile",
-  "url": "https://atwine.github.io/cv/",
-  "name": "CV · Mugume Twinamatsiko Atwine",
-  "isPartOf": {
-    "@id": "https://atwine.github.io/#website"
-  },
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://atwine.github.io/#person",
-    "name": "Mugume Twinamatsiko Atwine",
-    "url": "https://atwine.github.io/"
-  },
-  "dateModified": "2026-11-04"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://atwine.github.io/#website",
+      "url": "https://atwine.github.io/",
+      "name": "Mugume Twinamatsiko Atwine",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://atwine.github.io/cv/#profile",
+      "url": "https://atwine.github.io/cv/",
+      "name": "CV · Mugume Twinamatsiko Atwine",
+      "isPartOf": {
+        "@id": "https://atwine.github.io/#website"
+      },
+      "mainEntity": {
+        "@id": "https://atwine.github.io/#person"
+      },
+      "dateModified": "2026-11-04"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://atwine.github.io/#person",
+      "name": "Mugume Twinamatsiko Atwine",
+      "url": "https://atwine.github.io/"
+    }
+  ]
 }
     </script>
     <link rel="stylesheet" href="../styles.css">
