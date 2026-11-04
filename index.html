@@ -15,31 +15,353 @@
     <meta property="og:url" content="https://atwine.github.io/">
     <meta property="og:image" content="https://atwine.github.io/images/atwine_headshot.jpg">
     <meta property="og:image:alt" content="Portrait of Mugume Twinamatsiko Atwine">
+    <meta property="og:site_name" content="Mugume Twinamatsiko Atwine">
     <meta name="twitter:card" content="summary">
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://atwine.github.io/#person",
-        "name": "Mugume Twinamatsiko Atwine",
-        "url": "https://atwine.github.io/",
-        "image": "https://atwine.github.io/images/atwine_headshot.jpg",
-        "jobTitle": "Health Data Scientist & ML Engineer",
-        "address": { "@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG" },
-        "knowsAbout": ["Natural language processing", "Health informatics", "Retrieval-augmented generation", "Low-resource languages", "Data harmonisation"],
-        "sameAs": [
-            "https://orcid.org/0009-0007-8183-9412",
-            "https://scholar.google.com/citations?user=7-2DFoYAAAAJ",
-            "https://github.com/atwine",
-            "https://www.linkedin.com/in/mugume-twinamatsiko-atwine-msc-976ab12b/"
-        ]
+      "@type": "WebSite",
+      "@id": "https://atwine.github.io/#website",
+      "url": "https://atwine.github.io/",
+      "name": "Mugume Twinamatsiko Atwine",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://atwine.github.io/#profile",
+      "url": "https://atwine.github.io/",
+      "name": "Mugume Twinamatsiko Atwine · Health Data Scientist & ML Engineer",
+      "isPartOf": {
+        "@id": "https://atwine.github.io/#website"
+      },
+      "mainEntity": {
+        "@id": "https://atwine.github.io/#person"
+      },
+      "dateModified": "2026-11-04"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://atwine.github.io/#person",
+      "name": "Mugume Twinamatsiko Atwine",
+      "givenName": "Mugume Twinamatsiko",
+      "familyName": "Atwine",
+      "alternateName": [
+        "Mugume T. Atwine",
+        "M. T. Atwine",
+        "Atwine MT",
+        "Mugume Atwine",
+        "Twinamatsiko AM"
+      ],
+      "url": "https://atwine.github.io/",
+      "image": "https://atwine.github.io/images/atwine_headshot.jpg",
+      "email": "mailto:twinmugume@gmail.com",
+      "jobTitle": "Health Data Scientist & ML Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0009-0007-8183-9412"
+      },
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Africa Center of Excellence in Bioinformatics and Data-Intensive Sciences (ACE Uganda)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Infectious Diseases Institute, Makerere University"
+        },
+        {
+          "@type": "Organization",
+          "name": "Uganda Virus Research Institute"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Limkokwing University of Creative Technology"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Mbarara University of Science and Technology"
+        }
+      ],
+      "knowsAbout": [
+        "Natural language processing",
+        "Machine translation",
+        "Retrieval-augmented generation",
+        "Low-resource languages",
+        "Luganda",
+        "Health informatics",
+        "Data harmonisation"
+      ],
+      "sameAs": [
+        "https://orcid.org/0009-0007-8183-9412",
+        "https://scholar.google.com/citations?user=7-2DFoYAAAAJ",
+        "https://github.com/atwine",
+        "https://www.linkedin.com/in/mugume-twinamatsiko-atwine-msc-976ab12b/"
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1371/journal.pdig.0001256",
+      "headline": "A bi-lingual chatbot implementation for pandemic response using the transformer-based approach",
+      "datePublished": "2026-04-01",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "PLOS Digital Health"
+      },
+      "author": [
+        {
+          "@id": "https://atwine.github.io/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Daudi Jjingo"
+        },
+        {
+          "@type": "Person",
+          "name": "Mike Nsubuga"
+        },
+        {
+          "@type": "Person",
+          "name": "Richard Serunjogi"
+        },
+        {
+          "@type": "Person",
+          "name": "Ibrahim Mbabaali"
+        },
+        {
+          "@type": "Person",
+          "name": "Ibra Lujumba"
+        },
+        {
+          "@type": "Person",
+          "name": "Byansi David"
+        },
+        {
+          "@type": "Person",
+          "name": "Timothy Kintu"
+        },
+        {
+          "@type": "Person",
+          "name": "Ronald Galiwango"
+        },
+        {
+          "@type": "Person",
+          "name": "Grace Kebirungi"
+        }
+      ],
+      "url": "https://doi.org/10.1371/journal.pdig.0001256"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1093/bioinformatics/btag149",
+      "headline": "A scalable HPC framework for bioinformatics in resource-limited settings: design principles, implementation, and sustainability from the UVRI experience",
+      "datePublished": "2026-03-25",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Bioinformatics"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Edward Lukyamuzi"
+        },
+        {
+          "@type": "Person",
+          "name": "Timothy Kimbowa Wamala"
+        },
+        {
+          "@type": "Person",
+          "name": "Alfred Ssekagiri"
+        },
+        {
+          "@type": "Person",
+          "name": "Ronald Galiwango"
+        },
+        {
+          "@type": "Person",
+          "name": "Grace Kebirungi"
+        },
+        {
+          "@id": "https://atwine.github.io/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Mike Nsubuga"
+        },
+        {
+          "@type": "Person",
+          "name": "Suresh Maslamoney"
+        },
+        {
+          "@type": "Person",
+          "name": "Sumir Panji"
+        },
+        {
+          "@type": "Person",
+          "name": "Nicola J. Mulder"
+        },
+        {
+          "@type": "Person",
+          "name": "Daudi Jjingo"
+        },
+        {
+          "@type": "Person",
+          "name": "Jonathan Kayondo"
+        }
+      ],
+      "url": "https://doi.org/10.1093/bioinformatics/btag149"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1093/bib/bbag046",
+      "headline": "Pathways, outputs and impact of NIH-supported bioinformatics and genomics graduate trainees in Africa",
+      "datePublished": "2026-01",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Briefings in Bioinformatics"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Daudi Jjingo"
+        },
+        {
+          "@id": "https://atwine.github.io/#person"
+        }
+      ],
+      "url": "https://doi.org/10.1093/bib/bbag046"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1371/journal.pcbi.1013481",
+      "headline": "Ten simple rules for building and maintaining sustainable high-performance computing infrastructure for research in resource-limited settings",
+      "datePublished": "2025-09-22",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "PLOS Computational Biology"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ronald Galiwango"
+        },
+        {
+          "@type": "Person",
+          "name": "Christopher J. Whalen"
+        },
+        {
+          "@type": "Person",
+          "name": "Grace Kebirungi"
+        },
+        {
+          "@id": "https://atwine.github.io/#person"
+        }
+      ],
+      "url": "https://doi.org/10.1371/journal.pcbi.1013481"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.21203/rs.3.rs-10357473/v1",
+      "headline": "Development and evaluation of HEAL: a bilingual English-Luganda RAG chatbot for disease surveillance in Uganda",
+      "datePublished": "2026-08-06",
+      "creativeWorkStatus": "Preprint",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Research Square"
+      },
+      "author": [
+        {
+          "@id": "https://atwine.github.io/#person"
+        },
+        {
+          "@type": "Person",
+          "name": "Timothy Mwanje Kintu"
+        },
+        {
+          "@type": "Person",
+          "name": "Ibra Lujumba"
+        },
+        {
+          "@type": "Person",
+          "name": "Mbabali Ibrahim"
+        },
+        {
+          "@type": "Person",
+          "name": "Khalifan Muwonge"
+        },
+        {
+          "@type": "Person",
+          "name": "Lawrence Muwonge"
+        },
+        {
+          "@type": "Person",
+          "name": "Lydia Nakiire"
+        },
+        {
+          "@type": "Person",
+          "name": "Vivian Ntono"
+        },
+        {
+          "@type": "Person",
+          "name": "Mike Nsubuga"
+        },
+        {
+          "@type": "Person",
+          "name": "Ronald M. Galiwango"
+        },
+        {
+          "@type": "Person",
+          "name": "Stella Lunkuse"
+        },
+        {
+          "@type": "Person",
+          "name": "Grace Kebirungi"
+        },
+        {
+          "@type": "Person",
+          "name": "Daudi Jjingo"
+        }
+      ],
+      "url": "https://doi.org/10.21203/rs.3.rs-10357473/v1"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.12688/verixiv.948.1",
+      "headline": "Mapping the potentials and limitations of using generative AI technologies to address socio-economic challenges in LMICs",
+      "datePublished": "2025-04-04",
+      "creativeWorkStatus": "Preprint",
+      "publisher": {
+        "@type": "Organization",
+        "name": "VeriXiv"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Rachel Adams"
+        },
+        {
+          "@id": "https://atwine.github.io/#person"
+        }
+      ],
+      "url": "https://doi.org/10.12688/verixiv.948.1"
     }
+  ]
+}
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -63,7 +385,7 @@
         <div class="sidebar-top">
             <img class="portrait" src="images/atwine_headshot.jpg" alt="Portrait of Mugume Twinamatsiko Atwine" width="280" height="320">
             <div class="identity">
-                <p class="identity-name">Mugume Twinamatsiko Atwine</p>
+                <h1 class="identity-name">Mugume Twinamatsiko Atwine</h1>
                 <p class="identity-role">Health Data Scientist &amp; ML Engineer</p>
                 <p class="identity-place">Kampala, Uganda</p>
             </div>
@@ -84,7 +406,7 @@
     <main class="main" id="main">
 
         <section id="about" aria-labelledby="statement">
-            <h1 class="statement" id="statement">I build and evaluate language technology and data tools for health systems in Sub-Saharan Africa.</h1>
+            <p class="statement" id="statement">I build and evaluate language technology and data tools for health systems in Sub-Saharan Africa.</p>
             <div class="intro">
                 <p>Health guidance in Uganda is mostly written in English, and general-purpose language models can give confident answers that contradict national protocols. My work tries to close both gaps. I have built bilingual English–Luganda assistants that answer only from expert-approved or official sources, and tested them with health experts and frontline workers. I also develop open tools that help research projects map their data to shared standards.</p>
                 <p>Questions I am working on:</p>
@@ -276,6 +598,12 @@
                     <p class="links"><a href="https://doi.org/10.5281/zenodo.14608441">DOI</a></p>
                 </li>
             </ul>
+        </section>
+
+        <section class="section" id="bio" aria-labelledby="bio-title">
+            <h2 class="section-title" id="bio-title">Short bio</h2>
+            <p class="section-note">For event programmes and introductions.</p>
+            <p class="bio-text">Mugume Twinamatsiko Atwine is a health data scientist and machine learning engineer based in Kampala, Uganda. Atwine builds and evaluates bilingual English–Luganda health assistants that answer only from expert-approved or official sources, and leads the eLwazi Data Models, Storage, Registries and Catalogue Working Group in the NIH-funded DS-I Africa program. Recent work includes a co-first-authored paper in <cite>PLOS Digital Health</cite> (2026) on a bilingual COVID-19 chatbot, and the Lacuna Luganda Health Corpus of 38,644 human-reviewed English–Luganda sentence pairs.</p>
         </section>
 
         <section class="section" id="partners" aria-labelledby="partners-title">

@@ -12,6 +12,10 @@ Live at <https://atwine.github.io>. GitHub Pages publishes this repository's `ma
 - `styles.css`: styles for both pages, including the print layout used for the PDF
 - `main.js`: copyright year and the "Copy" email button
 - `images/`: portrait and partner logos
+- `fonts/`: Newsreader and Instrument Sans, hosted here so the pages load no third-party files. Both fonts use the SIL Open Font License 1.1; the licence texts sit next to the font files.
+- `favicon.svg`, `apple-touch-icon.png`: the browser tab and home-screen icon
+
+The structured data in each page's `<script type="application/ld+json">` block tells search engines and AI assistants who the site is about, and which papers belong to that person. When you add a paper to the page, add it there too.
 
 ## Preview locally
 
