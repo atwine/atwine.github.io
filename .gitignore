@@ -4,3 +4,7 @@ Thumbs.db
 node_modules/
 .vscode/
 .idea/
+
+# Local tooling, never published
+.claude/
+.impeccable/

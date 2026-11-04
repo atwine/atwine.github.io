@@ -1,21 +1,32 @@
-# Personal CV Website
+# atwine.github.io
 
-This repository contains my professional CV/resume website. The website is built using HTML and CSS, featuring a clean, responsive design that works well on all devices.
+Research website of Mugume Twinamatsiko Atwine: projects, publications and CV.
 
-## Features
-- Responsive design
-- Modern UI/UX
-- Clean and professional layout
-- Easy to maintain and update
+Live at <https://atwine.github.io>. GitHub Pages publishes this repository's `main` branch as it is, with no build step. Everything committed here is public, so personal or draft files belong somewhere else.
 
-## Setup
-1. Clone this repository
-2. Open `index.html` in your browser to view the website locally
+## Files
 
-## Deployment
-The website is deployed using GitHub Pages and can be accessed at [your-username.github.io/repository-name]
+- `index.html`: homepage
+- `cv/index.html`: online CV
+- `cv/Mugume-Twinamatsiko-Atwine-CV.pdf`: PDF version of the CV, generated from the online CV
+- `styles.css`: styles for both pages, including the print layout used for the PDF
+- `main.js`: copyright year and the "Copy" email button
+- `images/`: portrait and partner logos
 
-## Technologies Used
-- HTML5
-- CSS3
-- Font Awesome Icons
+## Preview locally
+
+```bash
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Then open <http://127.0.0.1:8000>.
+
+## Update the CV PDF
+
+After editing `cv/index.html` or `styles.css`, regenerate the PDF with Chrome while the local preview is running. The fresh profile (`mktemp -d`) stops Chrome from reusing an old copy of the stylesheet, and Chrome needs the full output path. Run it from the repository folder in Git Bash:
+
+```bash
+"C:/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --disable-gpu --no-pdf-header-footer --virtual-time-budget=15000 --user-data-dir="$(mktemp -d)" --print-to-pdf="$(cygpath -w "$PWD")\\cv\\Mugume-Twinamatsiko-Atwine-CV.pdf" http://127.0.0.1:8000/cv/
+```
+
+Check that the PDF is still three pages; if a section spills onto a fourth, tighten the `@media print` spacing in `styles.css`.
